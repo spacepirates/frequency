@@ -8,7 +8,7 @@ import (
 )
 
 func test(c *gin.Context) {
-	c.JSON(200, gin.H{"test": "hello, web!"})
+	c.JSON(200, gin.H{"test": "hello, web users. first change!"})
 }
 
 func main() {
