@@ -3,15 +3,19 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	// "fmt"
-	"net/http"
+	// "net/http"
 	// "time"
 )
+
+func test(c *gin.Context) {
+	c.JSON(200, gin.H{"test": "hello, web!"})
+}
 
 func main() {
 	g := gin.Default()
 
 	//Routes
-	g.GET("/", c.JSON(200, gin.H{"test": "hello, web!"}))
+	g.GET("/", test)
 
 	g.Run(":80")
 }
