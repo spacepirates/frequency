@@ -17,5 +17,5 @@ func main() {
 	//Routes
 	g.GET("/", test)
 
-	g.Run(":1336")
+	g.Run(":1337")
 }
