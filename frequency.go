@@ -8,7 +8,7 @@ import (
 )
 
 func test(c *gin.Context) {
-	c.JSON(200, gin.H{"test": "hello, web users. first change!"})
+	c.JSON(200, gin.H{"test": "hello, web users. first change! oh yeah"})
 }
 
 func main() {
@@ -17,5 +17,5 @@ func main() {
 	//Routes
 	g.GET("/", test)
 
-	g.Run(":1337")
+	g.Run(":n00b")
 }
